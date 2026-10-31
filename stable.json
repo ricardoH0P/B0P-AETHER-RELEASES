@@ -1,6 +1,6 @@
 {
-  "version": "12.5",
-  "setup_url": "https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/download/v12.5/B0P_AETHER_Setup_12_5.exe",
-  "sha256": "7b7433a962ff85a8f41dc200f10904cf0dd6172ee3ee52314ddde7068a3a3ece",
-  "notes": "B0P AETHER 12.5 — Teste de atualizacoes automaticas: interface simplificada (sem URL de manifesto), pesquisa no canal oficial, download HTTPS e validacao SHA-256 com confirmacao antes de instalar."
+  "version": "12.5.3",
+  "setup_url": "https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/download/v12.5.3/B0P_AETHER_Setup_12_5_3.exe",
+  "sha256": "d82eab03d2390e4cd099a651275a2568b15acd4650d95e8e8db03708dba04b68",
+  "notes": "B0P AETHER 12.5.3 — Atualizacao de teste: integracao de FPS com RTSS, HUD com metricas CPU/GPU/RAM e temperaturas identificadas, melhorias do icone transparente e do instalador. O benchmark UE5 externo ainda nao esta incluido. A instalacao requer confirmacao."
 }
