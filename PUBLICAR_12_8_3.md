@@ -1,16 +1,16 @@
-# Publicar B0P AETHER 12.8.3
+# Publicar B0P AETHER 12.8.3 R2
 
-**Estado:** a versão 12.8.3 ainda não está publicada no canal stable. A versão pública atual é 12.5.3.
+**Estado:** pacote de desenvolvimento 12.8.3 R2 recebido para revisão. A publicação do instalador e a validação do SHA-256 ainda estão pendentes. A versão pública atual é 12.5.3.
 
 ## 1. Compilar e validar em Windows
 
-Usar o pacote de desenvolvimento `B0P_AETHER_12_8_3_TOPBAR_E_SETUP_FIX.zip` e executar o seu `INSTALAR_POR_POWERSHELL.ps1`. A compilação requer .NET 10 SDK e o pacote UE5 indicado nas instruções de desenvolvimento. Confirmar que a compilação terminou sem erros e testar o instalador em Windows.
+Usar o pacote de desenvolvimento `B0P_AETHER_12_8_3_R2_GITHUB_COMPLETO.zip` e rever o Setup.exe incluído no ZIP completo e confirmar que foi gerado a partir da última compilação R2; caso contrário, recompilar através do `INSTALAR_POR_POWERSHELL.ps1` do pacote de fontes. A compilação requer .NET 10 SDK e o pacote UE5 indicado nas instruções de desenvolvimento. Confirmar que a compilação terminou sem erros e testar o instalador em Windows.
 
 **Não publicar apenas o ZIP de fontes como se fosse um instalador.**
 
 ## 2. Preparar o instalador
 
-O ficheiro a publicar é `B0P_AETHER_Setup_12_8_3.exe`, gerado na pasta RELEASE da compilação **12.8.3**. Confirmar visualmente o cabeçalho, ícone B0P existente, versão, botão X do Setup e atualização da aplicação instalada. Evitar publicar um Setup de versões anteriores com nome mudado.
+O ficheiro a publicar é `B0P_AETHER_Setup_12_8_3.exe`, gerado na pasta RELEASE da compilação **12.8.3**. Confirmar visualmente o cabeçalho, ícone B0P existente, versão, botão X do Setup, correção do scroll/cliques rápidos da R2 e atualização da aplicação instalada. Evitar publicar um Setup de versões anteriores com nome mudado.
 
 No PowerShell, obter o hash:
 
