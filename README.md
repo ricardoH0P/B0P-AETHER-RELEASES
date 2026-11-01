@@ -1,30 +1,32 @@
 # B0P AETHER — Atualizações oficiais
 
-Repositório público de distribuição da **B0P AETHER**. Aqui ficam o manifesto `stable.json`, as notas de versão e os instaladores Windows disponibilizados em **GitHub Releases**.
+Repositório público para distribuir versões **B0P AETHER** através de GitHub Releases e do manifesto `stable.json`. O código-fonte permanece privado.
 
-## Canal stable — versão publicada
+## Versão disponível pelo atualizador
 
-**Versão atualmente disponível para atualização automática:** `12.5.3`.
+**Atualmente no canal stable: 12.5.3.**
 
-- [Descarregar o instalador estável 12.5.3](https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/tag/v12.5.3)
-- [Consultar o manifesto de atualização](stable.json)
+- [Release 12.5.3](https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/tag/v12.5.3)
+- [Manifesto de atualização atual](stable.json)
 
-A aplicação consulta `stable.json` por HTTPS. Só anuncia um update quando o instalador correspondente já está publicado, acessível e com o hash SHA-256 verificado.
+O `stable.json` contém a versão disponível, URL do instalador, SHA-256 e notas. Só deve anunciar um instalador que esteja realmente acessível e verificado.
 
-## Próxima versão em preparação — 12.8.3
+## B0P AETHER 12.8.3 R2 — publicação em preparação
 
-A B0P AETHER **12.8.3 — Topbar e Setup Fix** inclui, nas fontes de desenvolvimento, melhorias da barra superior, indicação da versão, alinhamento dos controlos e botão de fechar do instalador, preservando a identidade B0P e o Dashboard.
+**Título a usar no GitHub:** `B0P AETHER 12.8.3 R2 — Navegação sem Bloqueios`
 
-**Estado: ainda não publicada para download automático.** A entrega de desenvolvimento é um ZIP com código e scripts, não um `Setup.exe` compilado. A 12.8.3 só deverá aparecer na aplicação depois de o instalador Windows ter sido compilado, testado e publicado como asset no Release `v12.8.3`.
+**Tag:** `v12.8.3` • **Ficheiro:** `B0P_AETHER_Setup_12_8_3.exe`.
 
-Ver [passos de publicação da 12.8.3](PUBLICAR_12_8_3.md).
+A versão R2 inclui as melhorias visuais da barra superior e do Setup e a correção da seleção de categorias e do scroll. O pacote de desenvolvimento e instalador foi preparado para revisão, mas esta versão **ainda não está anunciada no canal stable**.
 
-## Regras de publicação
+[Consultar passos para publicar a 12.8.3 R2](PUBLICAR_12_8_3.md)
 
-1. Compilar em Windows e testar o instalador `B0P_AETHER_Setup_12_8_3.exe`.
-2. Criar um Release público `v12.8.3` com esse ficheiro anexado.
-3. Calcular e confirmar o SHA-256 do instalador exato publicado.
-4. Só então atualizar `stable.json` com `version`, `setup_url`, `sha256` e `notes`.
-5. Confirmar na aplicação a deteção, descarregamento, verificação, confirmação e instalação.
+## Ordem correta de publicação
 
-**Segurança:** este repositório não deve incluir fontes privadas, credenciais, tokens, backups locais ou ficheiros de depuração. O SHA-256 verifica a integridade em relação ao manifesto, mas não substitui uma assinatura de código.
+1. Compilar e testar o Setup da versão nova no Windows.
+2. Publicar o Release público e anexar o instalador.
+3. Confirmar URL e SHA-256 do executável publicado.
+4. Atualizar `stable.json` apenas com valores reais.
+5. Testar a atualização pela própria app.
+
+Não colocar fontes privadas, credenciais, tokens, backups locais ou ficheiros temporários no repositório público. A integridade por SHA-256 não substitui assinatura de código.
