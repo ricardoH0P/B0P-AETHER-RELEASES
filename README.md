@@ -1,19 +1,30 @@
 # B0P AETHER — Atualizações oficiais
 
-Este é o **repositório público de distribuição** da B0P AETHER. Aqui são publicados apenas manifestos de atualização, instaladores e notas de versão. O código-fonte permanece num repositório privado separado.
+Repositório público de distribuição da **B0P AETHER**. Aqui ficam o manifesto `stable.json`, as notas de versão e os instaladores Windows disponibilizados em **GitHub Releases**.
 
-## Canal stable
+## Canal stable — versão publicada
 
-A aplicação consulta [stable.json](stable.json) através de HTTPS para descobrir se existe uma nova versão.
+**Versão atualmente disponível para atualização automática:** `12.5.3`.
 
-**Estado inicial:** versão `12.4`. Este primeiro manifesto testa apenas a ligação; **não existe qualquer instalador anunciado** e a aplicação não deverá oferecer download nesta fase.
+- [Descarregar o instalador estável 12.5.3](https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/tag/v12.5.3)
+- [Consultar o manifesto de atualização](stable.json)
 
-## Publicação de versões futuras
+A aplicação consulta `stable.json` por HTTPS. Só anuncia um update quando o instalador correspondente já está publicado, acessível e com o hash SHA-256 verificado.
 
-1. Compilar e testar o instalador no Windows.
-2. Criar um GitHub Release público com o instalador `.exe`.
-3. Verificar o SHA-256 do ficheiro publicado.
-4. Atualizar `stable.json` com a versão superior, o URL exato do asset e o SHA-256.
-5. Confirmar na app a deteção, o consentimento, a transferência e a instalação.
+## Próxima versão em preparação — 12.8.3
 
-O SHA-256 verifica integridade relativamente ao manifesto, mas não equivale a uma assinatura de código. Nunca publicar fontes privadas, credenciais, tokens ou backups locais neste repositório.
+A B0P AETHER **12.8.3 — Topbar e Setup Fix** inclui, nas fontes de desenvolvimento, melhorias da barra superior, indicação da versão, alinhamento dos controlos e botão de fechar do instalador, preservando a identidade B0P e o Dashboard.
+
+**Estado: ainda não publicada para download automático.** A entrega de desenvolvimento é um ZIP com código e scripts, não um `Setup.exe` compilado. A 12.8.3 só deverá aparecer na aplicação depois de o instalador Windows ter sido compilado, testado e publicado como asset no Release `v12.8.3`.
+
+Ver [passos de publicação da 12.8.3](PUBLICAR_12_8_3.md).
+
+## Regras de publicação
+
+1. Compilar em Windows e testar o instalador `B0P_AETHER_Setup_12_8_3.exe`.
+2. Criar um Release público `v12.8.3` com esse ficheiro anexado.
+3. Calcular e confirmar o SHA-256 do instalador exato publicado.
+4. Só então atualizar `stable.json` com `version`, `setup_url`, `sha256` e `notes`.
+5. Confirmar na aplicação a deteção, descarregamento, verificação, confirmação e instalação.
+
+**Segurança:** este repositório não deve incluir fontes privadas, credenciais, tokens, backups locais ou ficheiros de depuração. O SHA-256 verifica a integridade em relação ao manifesto, mas não substitui uma assinatura de código.
