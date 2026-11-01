@@ -1,32 +1,29 @@
 # B0P AETHER — Atualizações oficiais
 
-Repositório público para distribuir versões **B0P AETHER** através de GitHub Releases e do manifesto `stable.json`. O código-fonte permanece privado.
+Este repositório público distribui os instaladores da **B0P AETHER** por GitHub Releases e o manifesto `stable.json`. O código-fonte mantém-se privado no repositório de desenvolvimento.
 
-## Versão disponível pelo atualizador
+## Canal stable — B0P AETHER 12.8.3
 
-**Atualmente no canal stable: 12.5.3.**
+<https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/tag/12.8.3>
 
-- [Release 12.5.3](https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/tag/v12.5.3)
-- [Manifesto de atualização atual](stable.json)
+- **Versão:** `12.8.3` (revisão R2 de navegação e scroll)
+- **Asset oficial:** `B0P_AETHER_Setup_12_8_3.exe`
+- **Tag real do Release:** `12.8.3` (sem o prefixo `v`)
+- **URL de download:** <https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/download/12.8.3/B0P_AETHER_Setup_12_8_3.exe>
+- **SHA-256 apresentado pelo GitHub:** `071a9b00de315f7a56a58088f10fb57f42afb5d1fd9953f6265f7e6890a4df90`
 
-O `stable.json` contém a versão disponível, URL do instalador, SHA-256 e notas. Só deve anunciar um instalador que esteja realmente acessível e verificado.
+A aplicação consulta [stable.json](stable.json) para ler a versão, o URL do instalador, o hash e as notas. O manifesto passou a anunciar a 12.8.3 após confirmar que o Release é público e tem o asset esperado.
 
-## B0P AETHER 12.8.3 R2 — publicação em preparação
+## Alterações principais
 
-**Título a usar no GitHub:** `B0P AETHER 12.8.3 R2 — Navegação sem Bloqueios`
+- Refinamento do cabeçalho, da localização da versão e do botão de fechar do instalador.
+- Revisão da navegação por categorias e do scroll para eliminar bloqueios prolongados.
+- Preservação do Dashboard, da identidade B0P e dos módulos anteriores.
 
-**Tag:** `v12.8.3` • **Ficheiro:** `B0P_AETHER_Setup_12_8_3.exe`.
+O GitHub confirma a presença e o SHA-256 do asset, mas isso **não substitui testes de instalação e regressão num computador Windows**. Se uma instalação falhar, suspender a divulgação da versão até resolver a causa.
 
-A versão R2 inclui as melhorias visuais da barra superior e do Setup e a correção da seleção de categorias e do scroll. O pacote de desenvolvimento e instalador foi preparado para revisão, mas esta versão **ainda não está anunciada no canal stable**.
+[Consultar o registo de publicação 12.8.3](PUBLICAR_12_8_3.md).
 
-[Consultar passos para publicar a 12.8.3 R2](PUBLICAR_12_8_3.md)
+## Regras de segurança
 
-## Ordem correta de publicação
-
-1. Compilar e testar o Setup da versão nova no Windows.
-2. Publicar o Release público e anexar o instalador.
-3. Confirmar URL e SHA-256 do executável publicado.
-4. Atualizar `stable.json` apenas com valores reais.
-5. Testar a atualização pela própria app.
-
-Não colocar fontes privadas, credenciais, tokens, backups locais ou ficheiros temporários no repositório público. A integridade por SHA-256 não substitui assinatura de código.
+O repositório público contém instaladores, manifestos e notas, não código privado, credenciais, backups locais ou fontes completas. Confirmar o hash do ficheiro descarregado antes de executar o instalador. SHA-256 verifica a integridade em relação ao manifesto, não a assinatura digital do fabricante.
