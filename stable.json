@@ -1,6 +1,6 @@
 {
-  "version": "12.5.3",
-  "setup_url": "https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/download/v12.5.3/B0P_AETHER_Setup_12_5_3.exe",
-  "sha256": "d82eab03d2390e4cd099a651275a2568b15acd4650d95e8e8db03708dba04b68",
-  "notes": "B0P AETHER 12.5.3 — Atualizacao de teste: integracao de FPS com RTSS, HUD com metricas CPU/GPU/RAM e temperaturas identificadas, melhorias do icone transparente e do instalador. O benchmark UE5 externo ainda nao esta incluido. A instalacao requer confirmacao."
+  "version": "12.8.3",
+  "setup_url": "https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/download/12.8.3/B0P_AETHER_Setup_12_8_3.exe",
+  "sha256": "071a9b00de315f7a56a58088f10fb57f42afb5d1fd9953f6265f7e6890a4df90",
+  "notes": "B0P AETHER 12.8.3 R2 - barra superior e Setup refinados, navegacao e scroll corrigidos sem bloqueios longos. Atualizacao com confirmacao do utilizador."
 }
