@@ -1,6 +1,6 @@
 {
-  "version": "12.8.3",
-  "setup_url": "https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/download/12.8.3/B0P_AETHER_Setup_12_8_3.exe",
-  "sha256": "071a9b00de315f7a56a58088f10fb57f42afb5d1fd9953f6265f7e6890a4df90",
-  "notes": "B0P AETHER 12.8.3 R2 - barra superior e Setup refinados, navegacao e scroll corrigidos sem bloqueios longos. Atualizacao com confirmacao do utilizador."
+  "version": "12.8.4.2",
+  "setup_url": "https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/download/12.8.4.2/B0P_AETHER_Setup_12_8_4_R2.exe",
+  "sha256": "2e7fc6c18d202f330e7bbe37cf7242fe96d52b6f3e3c4bae501fa471bb252534",
+  "notes": "B0P AETHER 12.8.4 R2 - Benchmarks recuperados em B0P AI, telemetria GPU no Dashboard e menu Rede reorganizado com testes de velocidade, ping e jitter. Atualizacao mediante confirmacao do utilizador."
 }
