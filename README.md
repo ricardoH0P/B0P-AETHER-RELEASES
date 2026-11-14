@@ -1,35 +1,36 @@
 # B0P AETHER — Atualizações oficiais
 
-Este repositório público distribui os instaladores da **B0P AETHER** através de GitHub Releases e do manifesto `stable.json`. O código-fonte mantém-se privado no repositório de desenvolvimento.
+Este repositório público distribui os instaladores da **B0P AETHER** através de GitHub Releases e do manifesto `stable.json`. O código-fonte de desenvolvimento mantém-se privado.
 
-## Canal stable — B0P AETHER 12.8.4 R2
+## Canal stable — B0P AETHER 13.2.8 / Gaming R8.2
 
-<https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/tag/12.8.4.2>
+- **Versão do atualizador:** `13.2.8.2`
+- **Tag da release:** `13.2.8`
+- **Instalador:** `B0P_AETHER_Setup_13_2_8_R8_2.exe`
+- **Release:** https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/tag/13.2.8
+- **Download:** https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/download/13.2.8/B0P_AETHER_Setup_13_2_8_R8_2.exe
+- **SHA-256 do asset (GitHub):** `3e9ea0892edb93751107dcef8ba77fc4ad12017d8e826736b60f19d0ca0cf5d5`
 
-- **Versão do atualizador:** `12.8.4.2`
-- **Nome da Release:** `B0P AETHER 12.8.4 R2`
-- **Tag real:** `12.8.4.2` (sem o prefixo `v`)
-- **Asset oficial:** `B0P_AETHER_Setup_12_8_4_R2.exe`
-- **Download:** <https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/download/12.8.4.2/B0P_AETHER_Setup_12_8_4_R2.exe>
-- **SHA-256 apresentado pelo GitHub:** `2e7fc6c18d202f330e7bbe37cf7242fe96d52b6f3e3c4bae501fa471bb252534`
+O ficheiro [stable.json](stable.json) anuncia esta versão para o atualizador da aplicação, com confirmação do utilizador antes do download e da instalação. A aplicação verifica o SHA-256 do instalador.
 
-A aplicação consulta [stable.json](stable.json) para obter a versão, o endereço do instalador, o hash e as notas. O manifesto só foi atualizado após a confirmação da Release pública e do asset correspondente.
+### Alterações da R8.2
 
-## Alterações principais
+- Monitorização Gaming com integração opcional RTSS para FPS e dados de sessão, quando disponíveis.
+- Recolha de métricas de CPU, GPU, RAM e VRAM para apoiar diagnósticos de desempenho.
+- Histórico de sessões Gaming e relatórios locais.
+- Instalador Windows com Inno Setup e ícone oficial B0P.
 
-- Recuperação do acesso ao laboratório de benchmarks em **B0P AI → Benchmarks**, usando os testes já existentes (UE5, CS2, GPU, CPU e RAM).
-- Ligação do indicador de utilização GPU do Dashboard à telemetria NVIDIA disponível, sem inventar valores quando falta um sensor.
-- Reorganização da **Rede**: secção **Velocidade** para testes de download/upload, ping e jitter; **Adaptadores** como inventário próprio em vez da duplicação com QoS.
-- Preservação do visual da aplicação e do comportamento de confirmação para testes e alterações.
+**Estado:** versão disponibilizada para testes. A publicação e o SHA-256 foram verificados no GitHub, mas isso não certifica a compatibilidade com anti-cheats, nem substitui validação da instalação e das funcionalidades no PC de teste.
 
-O GitHub confirma a presença e o SHA-256 do asset, mas isso **não substitui testes de instalação e regressão num computador Windows**. Os testes de velocidade podem consumir dados de rede; executa-os deliberadamente.
+### Testar atualização pela aplicação
 
-[Consultar o registo da publicação 12.8.4 R2](PUBLICAR_12_8_4_R2.md).
+Abrir B0P AETHER → **Definições → Atualizações** → **Procurar atualização**. Se a instalação for reconhecida e a versão instalada for inferior a `13.2.8.2`, deverá aparecer a opção de descarregar e instalar. É necessário confirmar a operação; não existe instalação silenciosa.
 
-## Regras de segurança
+### Versões anteriores
 
-O repositório público contém instaladores, manifestos e notas, não código privado, credenciais, backups locais ou fontes completas. Verifica o SHA-256 do ficheiro descarregado antes de executar o instalador. SHA-256 confirma a integridade em relação ao manifesto, não constitui uma assinatura digital do fabricante.
+- [B0P AETHER 12.8.4 R2](https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/tag/12.8.4.2)
+- [Registo da publicação 12.8.4 R2](PUBLICAR_12_8_4_R2.md)
 
-### Versão anterior
+## Integridade e segurança
 
-[B0P AETHER 12.8.3](https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/tag/12.8.3) — [registo de publicação](PUBLICAR_12_8_3.md).
+O repositório público contém instaladores, manifestos e notas, não backups pessoais, ficheiros de configuração privados ou o código-fonte da aplicação. O SHA-256 comprova a integridade relativamente ao manifesto publicado, mas não constitui uma assinatura digital nem uma certificação antivírus.
