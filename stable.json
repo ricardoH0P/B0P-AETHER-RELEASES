@@ -1,6 +1,6 @@
 {
-  "version": "12.8.4.2",
-  "setup_url": "https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/download/12.8.4.2/B0P_AETHER_Setup_12_8_4_R2.exe",
-  "sha256": "2e7fc6c18d202f330e7bbe37cf7242fe96d52b6f3e3c4bae501fa471bb252534",
-  "notes": "B0P AETHER 12.8.4 R2 - Benchmarks recuperados em B0P AI, telemetria GPU no Dashboard e menu Rede reorganizado com testes de velocidade, ping e jitter. Atualizacao mediante confirmacao do utilizador."
+  "version": "13.2.8.2",
+  "setup_url": "https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/download/13.2.8/B0P_AETHER_Setup_13_2_8_R8_2.exe",
+  "sha256": "3e9ea0892edb93751107dcef8ba77fc4ad12017d8e826736b60f19d0ca0cf5d5",
+  "notes": "B0P AETHER 13.2.8 / Gaming R8.2 - Monitorização gaming com RTSS opcional, recolha de CPU, GPU, RAM e VRAM, histórico de sessões e melhoria do diagnóstico de desempenho. Instalador Inno Setup e ícone oficial. Instalação apenas com confirmação. Versão para testes; compatibilidade com anti-cheats não certificada."
 }
