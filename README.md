@@ -1,36 +1,46 @@
 # B0P AETHER — Atualizações oficiais
 
-Este repositório público distribui os instaladores da **B0P AETHER** através de GitHub Releases e do manifesto `stable.json`. O código-fonte de desenvolvimento mantém-se privado.
+Este repositório público distribui o instalador da **B0P AETHER** através de GitHub Releases e do manifesto [stable.json](stable.json). O código-fonte de desenvolvimento continua privado.
 
-## Canal stable — B0P AETHER 13.2.8 / Gaming R8.2
+## Versão atualmente anunciada — B0P AETHER 13.2.8.4 / Gaming R8.2 FULL HUD FIX
 
-- **Versão do atualizador:** `13.2.8.2`
-- **Tag da release:** `13.2.8`
-- **Instalador:** `B0P_AETHER_Setup_13_2_8_R8_2.exe`
-- **Release:** https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/tag/13.2.8
-- **Download:** https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/download/13.2.8/B0P_AETHER_Setup_13_2_8_R8_2.exe
-- **SHA-256 do asset (GitHub):** `3e9ea0892edb93751107dcef8ba77fc4ad12017d8e826736b60f19d0ca0cf5d5`
+- **Versão reportada pelo atualizador:** `13.2.8.4`
+- **Tag da release GitHub:** `13_2_8_R2`
+- **Asset:** `B0P_AETHER_Setup_13_2_8_R8_2_FULL_HUD_FIX.exe`
+- **Tamanho publicado:** 346894720 bytes (330,8 MiB)
+- **SHA-256 publicado pelo GitHub:** `6a61f538010d36ce5bff09f434aa842c53d2028073eb857ca3eed27b0b5bfec9`
+- **Página da release:** https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/tag/13_2_8_R2
+- **Instalador:** https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/download/13_2_8_R2/B0P_AETHER_Setup_13_2_8_R8_2_FULL_HUD_FIX.exe
 
-O ficheiro [stable.json](stable.json) anuncia esta versão para o atualizador da aplicação, com confirmação do utilizador antes do download e da instalação. A aplicação verifica o SHA-256 do instalador.
+O manifesto anuncia a versão `13.2.8.4`, mesmo que a tag da release tenha outro formato. Isto é intencional: o atualizador compara a versão numérica do executável com a versão do `stable.json`.
 
-### Alterações da R8.2
+### Alterações incluídas nesta revisão
 
-- Monitorização Gaming com integração opcional RTSS para FPS e dados de sessão, quando disponíveis.
-- Recolha de métricas de CPU, GPU, RAM e VRAM para apoiar diagnósticos de desempenho.
-- Histórico de sessões Gaming e relatórios locais.
-- Instalador Windows com Inno Setup e ícone oficial B0P.
+- Ajuste do HUD para recuperar a prioridade visual quando um jogo em janela sem bordas recebe foco, sem ativar a janela da B0P.
+- Consolidação da leitura válida de temperatura CPU para o Gaming.
+- Recolha Gaming de CPU, GPU, RAM, VRAM e FPS quando as fontes estão disponíveis.
+- Empacotamento Full destinado a incluir o benchmark UE5 e os seus recursos na pasta `Benchmark/UE5`.
+- Instalador Windows com Inno Setup, com progresso de instalação.
 
-**Estado:** versão disponibilizada para testes. A publicação e o SHA-256 foram verificados no GitHub, mas isso não certifica a compatibilidade com anti-cheats, nem substitui validação da instalação e das funcionalidades no PC de teste.
+**Aviso de validação:** o GitHub confirma o asset e o respetivo digest, mas a presença e execução correta de todos os recursos UE5, a visibilidade do HUD e a atualização real precisam de teste no Windows. Um HUD WPF não tem garantia de aparecer em ecrã inteiro exclusivo. Não existe certificação de compatibilidade com anti-cheats.
 
-### Testar atualização pela aplicação
+### Verificar atualizações na B0P
 
-Abrir B0P AETHER → **Definições → Atualizações** → **Procurar atualização**. Se a instalação for reconhecida e a versão instalada for inferior a `13.2.8.2`, deverá aparecer a opção de descarregar e instalar. É necessário confirmar a operação; não existe instalação silenciosa.
+Na aplicação instalada: **Definições → Atualizações → Procurar atualização**. Uma instalação reconhecida com versão anterior a `13.2.8.4` deverá apresentar a atualização e pedir confirmação antes de instalar.
+
+### Verificar SHA-256 do instalador
+
+```powershell
+Get-FileHash -Algorithm SHA256 -LiteralPath "$env:USERPROFILE\Downloads\B0P_AETHER_Setup_13_2_8_R8_2_FULL_HUD_FIX.exe"
+```
+
+O resultado deve coincidir com o SHA-256 apresentado acima. Esta verificação confirma integridade, não é uma assinatura digital de confiança.
 
 ### Versões anteriores
 
+- [B0P AETHER 13.2.8.2](https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/tag/13.2.8)
 - [B0P AETHER 12.8.4 R2](https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/tag/12.8.4.2)
-- [Registo da publicação 12.8.4 R2](PUBLICAR_12_8_4_R2.md)
 
-## Integridade e segurança
+## Privacidade
 
-O repositório público contém instaladores, manifestos e notas, não backups pessoais, ficheiros de configuração privados ou o código-fonte da aplicação. O SHA-256 comprova a integridade relativamente ao manifesto publicado, mas não constitui uma assinatura digital nem uma certificação antivírus.
+Publicar apenas os instaladores e documentação: não colocar código-fonte privado, ficheiros de credenciais, backups, relatórios de benchmark pessoais nem históricos de jogo.
