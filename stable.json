@@ -1,6 +1,6 @@
 {
-  "version": "13.2.8.6",
-  "setup_url": "https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/download/13_2_8_6/B0P_AETHER_Setup_13_2_8_6_FULL.exe",
-  "sha256": "61a41502f8cebbc81e58f5b39ec1070226f16b358823e6ec7ee3daffe35f8b0e",
-  "notes": "B0P AETHER 13.2.8.6 / Gaming R8.2 Full: simplificacao do menu HUD/FPS e remocao do bloco de versao redundante em Definicoes. Mantem medicao ICMP real (PING), leitura de temperatura CPU pelo motor de sensores atualizado e monitorizacao Gaming. Setup completo preparado com benchmark UE5 integrado. Atualizacao mediante confirmacao do utilizador; funcionalidades e instalacao devem ser validadas no Windows."
+  "version": "13.2.8.7",
+  "setup_url": "https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/download/13.2.8.7/B0P_AETHER_Setup_13_2_8_7_FULL.exe",
+  "sha256": "0ea42617fee691fc7eb3cef3b36270586c1bacfb16b5916303481b86ec08ca2e",
+  "notes": "B0P AETHER 13.2.8.7 / Gaming R8.2 FULL — auxiliar de sensores CPU com elevação UAC autorizada, leitura CPU com validade de 8 segundos, PING ICMP com validade de 12 segundos, HUD/FPS e benchmark UE5 integrado no Setup. Versão de teste: validar temperatura, ping e benchmark no Windows."
 }
