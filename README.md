@@ -1,46 +1,50 @@
 # B0P AETHER — Atualizações oficiais
 
-Este repositório público distribui o instalador da **B0P AETHER** através de GitHub Releases e do manifesto [stable.json](stable.json). O código-fonte de desenvolvimento continua privado.
+Este repositório público distribui os instaladores da **B0P AETHER** por GitHub Releases e anuncia atualizações através de [stable.json](stable.json). O código-fonte de desenvolvimento e os dados pessoais não são distribuídos neste repositório.
 
-## Versão atualmente anunciada — B0P AETHER 13.2.8.4 / Gaming R8.2 FULL HUD FIX
+## Atualização atual — B0P AETHER 13.2.8.6 / Gaming R8.2 Full
 
-- **Versão reportada pelo atualizador:** `13.2.8.4`
-- **Tag da release GitHub:** `13_2_8_R2`
-- **Asset:** `B0P_AETHER_Setup_13_2_8_R8_2_FULL_HUD_FIX.exe`
-- **Tamanho publicado:** 346894720 bytes (330,8 MiB)
-- **SHA-256 publicado pelo GitHub:** `6a61f538010d36ce5bff09f434aa842c53d2028073eb857ca3eed27b0b5bfec9`
-- **Página da release:** https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/tag/13_2_8_R2
-- **Instalador:** https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/download/13_2_8_R2/B0P_AETHER_Setup_13_2_8_R8_2_FULL_HUD_FIX.exe
+- **Versão do atualizador:** `13.2.8.6`
+- **Tag real da release:** `13_2_8_6`
+- **Instalador:** `B0P_AETHER_Setup_13_2_8_6_FULL.exe`
+- **Tamanho do asset no GitHub:** 346755965 bytes (330,7 MiB)
+- **SHA-256 do asset (GitHub):** `61a41502f8cebbc81e58f5b39ec1070226f16b358823e6ec7ee3daffe35f8b0e`
+- **Release:** https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/tag/13_2_8_6
+- **Download:** https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/download/13_2_8_6/B0P_AETHER_Setup_13_2_8_6_FULL.exe
 
-O manifesto anuncia a versão `13.2.8.4`, mesmo que a tag da release tenha outro formato. Isto é intencional: o atualizador compara a versão numérica do executável com a versão do `stable.json`.
+A tag da release difere da versão numérica por uma questão de nomenclatura. O atualizador compara a versão do `stable.json` com a versão instalada, e valida o SHA-256 do Setup descarregado antes da instalação.
 
-### Alterações incluídas nesta revisão
+### O que mudou
 
-- Ajuste do HUD para recuperar a prioridade visual quando um jogo em janela sem bordas recebe foco, sem ativar a janela da B0P.
-- Consolidação da leitura válida de temperatura CPU para o Gaming.
-- Recolha Gaming de CPU, GPU, RAM, VRAM e FPS quando as fontes estão disponíveis.
-- Empacotamento Full destinado a incluir o benchmark UE5 e os seus recursos na pasta `Benchmark/UE5`.
-- Instalador Windows com Inno Setup, com progresso de instalação.
+- Menu **HUD/FPS** reorganizado para distinguir a sobreposição WPF, a apresentação de FPS e o estado do fornecedor RTSS.
+- Removido o bloco redundante de identificação da versão em **Definições → Geral**, mantendo a versão no topo e no rodapé.
+- Mantida a leitura real de **PING** (ICMP externo; não equivale à latência do servidor do jogo).
+- Mantida a melhoria de leitura de temperatura CPU com o motor de sensores atualizado.
+- Setup Full preparado para instalar o benchmark UE5 e os seus recursos juntamente com a B0P, sem downloads manuais depois da instalação.
+- Preservados o Dashboard, os restantes módulos e a identidade visual.
 
-**Aviso de validação:** o GitHub confirma o asset e o respetivo digest, mas a presença e execução correta de todos os recursos UE5, a visibilidade do HUD e a atualização real precisam de teste no Windows. Um HUD WPF não tem garantia de aparecer em ecrã inteiro exclusivo. Não existe certificação de compatibilidade com anti-cheats.
+### Como testar a atualização
 
-### Verificar atualizações na B0P
+Na B0P AETHER instalada: **Definições → Atualizações → Procurar atualização**. Uma instalação reconhecida com versão inferior a `13.2.8.6` deverá apresentar esta atualização. A instalação exige confirmação do utilizador.
 
-Na aplicação instalada: **Definições → Atualizações → Procurar atualização**. Uma instalação reconhecida com versão anterior a `13.2.8.4` deverá apresentar a atualização e pedir confirmação antes de instalar.
+O instalador também pode ser descarregado manualmente pela ligação acima.
 
-### Verificar SHA-256 do instalador
+### Verificação SHA-256 no PowerShell
 
 ```powershell
-Get-FileHash -Algorithm SHA256 -LiteralPath "$env:USERPROFILE\Downloads\B0P_AETHER_Setup_13_2_8_R8_2_FULL_HUD_FIX.exe"
+Get-FileHash -Algorithm SHA256 -LiteralPath "$env:USERPROFILE\Downloads\B0P_AETHER_Setup_13_2_8_6_FULL.exe"
 ```
 
-O resultado deve coincidir com o SHA-256 apresentado acima. Esta verificação confirma integridade, não é uma assinatura digital de confiança.
+O hash deve corresponder ao SHA-256 listado acima.
 
-### Versões anteriores
+**Limitações de validação:** a presença da release e a integridade do asset estão confirmadas no GitHub, mas o sucesso da atualização pela aplicação, a execução do benchmark UE5 e a compatibilidade com jogos/anti-cheats precisam de testes no Windows. O modo ecrã inteiro exclusivo pode impedir a apresentação de overlays WPF.
 
-- [B0P AETHER 13.2.8.2](https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/tag/13.2.8)
-- [B0P AETHER 12.8.4 R2](https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/tag/12.8.4.2)
+## Releases anteriores
 
-## Privacidade
+- [13.2.8.4 — Full HUD Fix](https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/tag/13_2_8_R2)
+- [13.2.8.2](https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/tag/13.2.8)
+- [12.8.4 R2](https://github.com/ricardoH0P/B0P-AETHER-RELEASES/releases/tag/12.8.4.2)
 
-Publicar apenas os instaladores e documentação: não colocar código-fonte privado, ficheiros de credenciais, backups, relatórios de benchmark pessoais nem históricos de jogo.
+## Segurança e privacidade
+
+Não publicar fontes privadas, backups, históricos pessoais nem credenciais. A verificação SHA-256 confirma integridade relativamente ao manifesto, mas não substitui uma assinatura digital nem garante ausência de falsos positivos.
